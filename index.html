@@ -23,7 +23,7 @@
 		<div class="top-line">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-3">
+					<div class="col-md-3">
 						<div class="logo">
 							<a href="#"><img src="img/logo.png" alt=""></a>
 							<!-- <a class="logo-block" href="#">CS</a>
@@ -31,9 +31,9 @@
 						
 						</div>
 					</div>
-					<div class="col-7">
+					<div class="col-md-7">
 						<nav>
-							<ul class="navigation">
+							<ul class="navigation" id="menu">
 								<li><a class="navigation-item" href="#">Home</a></li>
 								<li><a class="navigation-item" href="#">Pages</a></li>
 								<li><a class="navigation-item" href="#">Features</a></li>
@@ -43,7 +43,7 @@
 							</ul>
 						</nav>
 					</div>
-					<div class="col-2">
+					<div class="col-md-2">
 						<div class="social">
 							<a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
 							<a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
@@ -52,46 +52,50 @@
 						</div>
 					</div>
 				</div>
-				
+				<button id="hamburger-menu">&#9776;</button>
 			</div>
 		</div>
 		<div class="container">
-			<h1 class="header-title">Creatives</h1>
-			<p class="header-subtitle">Power by PSDfreebies.com</p>
-			<p class="scroll-title">scroll Down</p>
-			<div class="scroll-btn">
-				<a href="#" class="scroll-arrow"><i class="fas fa-angle-down"></i></a>
+			<div class="row">
+				<div class="col">
+					<h1 class="header-title">Creatives</h1>
+					<p class="header-subtitle">Power by PSDfreebies.com</p>
+					<p class="scroll-title">scroll Down</p>
+					<div class="scroll-btn">
+						<a href="#about" class="scroll-arrow"><i class="fas fa-angle-down"></i></a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>
 
-	<section class="about">
+	<section class="about" id="about">
 		<p class="wattermark__light">w</p>
 		<div class="container">
 			<h2 class="section-header__light">we are an awesome agency</h2>
 			<div class="row">
-				<div class="col-3">
+				<div class="col-lg-3 col-md-6">
 					<div class="section-block">
 						<div class="block-icon"><i class="far fa-edit"></i></div>
 						<h4 class="block-header">Feature one</h4>
 						<p class="block-description">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</p>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-lg-3 col-md-6">
 					<div class="section-block">
 						<div class="block-icon"><i class="far fa-edit"></i></div>
 						<h4 class="block-header">Feature two</h4>
 						<p class="block-description">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</p>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-lg-3 col-md-6">
 					<div class="section-block">
 						<div class="block-icon"><i class="fas fa-search"></i></div>
 						<h4 class="block-header">Feature three</h4>
 						<p class="block-description">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</p>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-lg-3 col-md-6">
 					<div class="section-block">
 						<div class="block-icon"><i class="far fa-comment"></i></div>
 						<h4 class="block-header">Feature four</h4>
@@ -113,10 +117,15 @@
 					</div>
 					<h2 class="news-header">akita inu dog</h2>
 					<p class="news-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-					<p class="news-description">Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur</p> </div>
+					<p class="news-description">Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur</p>
+				</div>
 			</div>
-			<div class="news-block"><img src="img/news-1.jpg" class="news-img" alt="news image"></div>
-			<div class="news-block"><img src="img/news-2.jpg" class="news-img" alt="news image"></div>
+			<div class="news-block news-block-img">
+				<img src="img/news-1.jpg" class="news-img" alt="news image">
+			</div>
+			<div class="news-block news-block-img">
+				<img src="img/news-2.jpg" class="news-img" alt="news image">
+			</div>
 			<div class="news-block news-light">
 				<div class="container">
 					<div class="news-title">
@@ -138,28 +147,28 @@
 			<h2 class="section-header__dark">let's blog</h2>
 			<h3 class="section-title__dark">We love clean design and advanced digital solutions.</h3>
 			<div class="row">
-				<div class="col-3">
+				<div class="col-md-3 col-sm-6">
 					<div class="blog-item">
 						<img src="img/blog/blog-1.jpg" alt="blog" class="blog-itemg-img">
 						<h4 class="blog-item-header">Fresh Summer Campaign</h4>
 						<p class="blog-item-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue</p>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-md-3 col-sm-6">
 					<div class="blog-item">
 						<img src="img/blog/blog-2.jpg" alt="blog-img" class="blog-itemg-img">
 						<h4 class="blog-item-header">Fresh Summer Campaign</h4>
 						<p class="blog-item-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue</p>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-md-3 col-sm-6">
 					<div class="blog-item">
 						<img src="img/blog/blog-3.jpg" alt="blog-img" class="blog-itemg-img">
 						<h4 class="blog-item-header">Fresh Summer Campaign</h4>
 						<p class="blog-item-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue</p>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-md-3 col-sm-6">
 					<div class="blog-item">
 						<img src="img/blog/blog-4.jpg" alt="blog-img" class="blog-itemg-img">
 						<h4 class="blog-item-header">Fresh Summer Campaign</h4>
@@ -171,13 +180,13 @@
 	<section class="action">
 		<div class="container">
 			<div class="row">
-				<div class="col">
+				<div class="col-md-6">
 					<div class="action-item">
 						<p class="action-icon"><i class="far fa-edit"></i></p>
 						<p class="action-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 					</div>
 				</div>
-				<div class="col">
+				<div class="col-md-6">
 					<div class="action-item">
 						<p class="action-icon"><i class="far fa-edit"></i></p>
 						<p class="action-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
@@ -186,7 +195,143 @@
 			</div>
 		</div>
 	</section>
+	<section class="features">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="features-block">
+						<h2 class="features-header">Akita Inu Dog</h2>
+						<p class="features-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+						<p class="advantages advantages-first">Fully Responsive Design</p>
+						<p class="advantages advantages-second">High Quality Code</p>
+						<p class="advantages advantages-third">Different Headers & Layout</p>
+					</div>
+				</div>
+				<!-- /.col -->
+				<div class="col-sm-6">
+					<div class="features-img">
+						<img src="img/iphone.png" alt="Iphone">
+					</div>
+				</div>
+				<!-- /.col -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.features -->
+	<section class="team">
+		<p class="wattermark__dark">T</p>
+		<div class="container">
+			<h2 class="section-header__dark">our team</h2>
+			<h3 class="section-title__dark"> sales long tail influencer pitch release niche market.</h3>
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="member">
+						<div class="member-photo"><img src="img/team/john.jpg" alt="ave"></div>
+						<!-- /.member-photo -->
+						<div class="member-description">
+							<p class="member-name">JOHN SNOW</p>
+							<!-- /.member-name -->
+							<p class="member-position">CEO</p>
+							<!-- /.member-position -->
+						</div>
+						<!-- /.member-description -->
+					</div>
+					<!-- /.member -->
+				</div>
+				<!-- /.col -->
+				<div class="col-md-3 col-sm-6">
+					<div class="member">
+						<div class="member-photo"><img src="img/team/lady.jpg" alt="jas"></div>
+						<!-- /.member-photo -->
+						<div class="member-description">
+							<p class="member-name">LADY SANSA</p>
+							<!-- /.member-name -->
+							<p class="member-position">WebDesigner</p>
+							<!-- /.member-position -->
+						</div>
+						<!-- /.member-description -->
+					</div>
+					<!-- /.member -->
+				</div>
+				<!-- /.col -->
+				<div class="col-md-3 col-sm-6">
+					<div class="member">
+						<div class="member-photo"><img src="img/team/jas.jpg" alt="john"></div>
+						<!-- /.member-photo -->
+						<div class="member-description">
+							<p class="member-name">DAVID SMITH</p>
+							<!-- /.member-name -->
+							<p class="member-position">Photographer</p>
+							<!-- /.member-position -->
+						</div>
+						<!-- /.member-description -->
+					</div>
+					<!-- /.member -->
+				</div>
+				<!-- /.col -->
+				<div class="col-md-3 col-sm-6">
+					<div class="member">
+						<div class="member-photo"><img src="img/team/ave.jpg" alt="lady"></div>
+						<!-- /.member-photo -->
+						<div class="member-description">
+							<p class="member-name">LADY SANSA</p>
+							<!-- /.member-name -->
+							<p class="member-position">Photographer</p>
+							<!-- /.member-position -->
+						</div>
+						<!-- /.member-description -->
+					</div>
+					<!-- /.member -->
+				</div>
+				<!-- /.col -->
+			</div>
+			<!-- /.row -->
+	</section>
+	<!-- /.team -->
+	<section class="contact">
+		<p class="wattermark__light">c</p>
+		<div class="container">
+			<h2 class="section-header__light">We’d love to hear about your project.</h2>
+		<form class="contact-form">
+			<div class="row">
+				<div class="col-md-4">
+					<input type="text" name="name" class="form-control" placeholder="Name">
+				</div>
+				<div class="col-md-4">
+					<input type="email" name="email" class="form-control" placeholder="Email">
+				</div>
+				<div class="col-md-4">
+					<input type="tel" name="phone" class="form-control" placeholder="Phone">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<textarea name="message" class="form-control form-message" cols="30" rows="10" placeholder="Message" ></textarea>
+					<div class="submit-wrapper">
+						<input type="submit" value="SUBMIT" class="form-submit">
+					</div>
+				</div>
+			</div>
+		</form>	
+	</section>
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5890.274302482628!2d-118.24931485646866!3d34.04888341077322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c64b8e4372e7%3A0x489d4efdeb06d3d8!2sGrand+Central+Market!5e0!3m2!1sru!2sua!4v1531079764797" width="100%" height="330" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="col">
+				<div class="copyright-block">
+					<p class="copyright">&copy; 2018 development by leogasmys</p>
+					<p class="copyright"> Design by PSDfreebies.com</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<button id="srollTop" onclick="topFunction()"><i class="fas fa-angle-up"></i></button>
 
 <script src="js/fontawesome.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>
