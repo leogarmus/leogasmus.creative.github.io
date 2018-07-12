@@ -12,10 +12,10 @@ window.onload =function(){
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("scrollTop").style.display = 'block';
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("sroll-btn").style.display = 'block';
     } else {
-        document.getElementById("scrollTop").style.display = 'none';
+        document.getElementById("sroll-btn").style.display = 'none';
     }
 }
 function topFunction() {
