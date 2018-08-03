@@ -1,15 +1,24 @@
-
-window.onload =function(){
-	document.getElementById("hamburger-menu").onmouseover = menuShow;
-	document.getElementById("hamburger-menu").onmouseout = menuHide;
-
-	function menuShow(){
-		document.getElementById("menu").style.right = 0;
-	}	
-	function menuHide(){
-		document.getElementById("menu").style.right = '-50%';
-	}	
+document.body.onload =function(){
+	var preloader = document.getElementById("page-preloader");
+	preloader.classList.toggle('done');
 }	
+	/*******MENU Button*****
+	/
+	/
+	/************************/
+document.getElementById("hamburger-menu").onclick = function() {menuShow()};
+document.getElementById("navigation-close").onclick = function() {menuHide()};
+
+function menuShow(){
+	document.getElementById("menu").style.right = 0;
+}	
+function menuHide(){
+	document.getElementById("menu").style.right = '-50%';
+}	
+	/*******Scroll Button*****
+	/
+	/
+	/************************/
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -23,4 +32,5 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0; 
 }
+
 
